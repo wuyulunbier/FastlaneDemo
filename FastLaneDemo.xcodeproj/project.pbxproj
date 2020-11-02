@@ -14,9 +14,12 @@
 		6DB806D7254C030900DCBC8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DB806D6254C030900DCBC8B /* Assets.xcassets */; };
 		6DB806DA254C030900DCBC8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB806D8254C030900DCBC8B /* LaunchScreen.storyboard */; };
 		6DB806DD254C030900DCBC8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB806DC254C030900DCBC8B /* main.m */; };
+		8C881E4995970486CFAF7578 /* libPods-FastLaneDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD8759A1538404551FFA1AC /* libPods-FastLaneDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31D3A200382EAE0BDA76A3EA /* Pods-FastLaneDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastLaneDemo.debug.xcconfig"; path = "Target Support Files/Pods-FastLaneDemo/Pods-FastLaneDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		68F483E0F1A9E09ADE2CAA77 /* Pods-FastLaneDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastLaneDemo.release.xcconfig"; path = "Target Support Files/Pods-FastLaneDemo/Pods-FastLaneDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6DB806C7254C030800DCBC8B /* FastLaneDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastLaneDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB806CA254C030800DCBC8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6DB806CB254C030800DCBC8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		6DB806D9254C030900DCBC8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DB806DB254C030900DCBC8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DB806DC254C030900DCBC8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFD8759A1538404551FFA1AC /* libPods-FastLaneDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FastLaneDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C881E4995970486CFAF7578 /* libPods-FastLaneDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A661C49A4D9DC05047FC054 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31D3A200382EAE0BDA76A3EA /* Pods-FastLaneDemo.debug.xcconfig */,
+				68F483E0F1A9E09ADE2CAA77 /* Pods-FastLaneDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6DB806BE254C030800DCBC8B = {
 			isa = PBXGroup;
 			children = (
 				6DB806C9254C030800DCBC8B /* FastLaneDemo */,
 				6DB806C8254C030800DCBC8B /* Products */,
+				3A661C49A4D9DC05047FC054 /* Pods */,
+				93559B23270F57A094AEC8DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +92,14 @@
 			path = FastLaneDemo;
 			sourceTree = "<group>";
 		};
+		93559B23270F57A094AEC8DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFD8759A1538404551FFA1AC /* libPods-FastLaneDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +107,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DB806E0254C030900DCBC8B /* Build configuration list for PBXNativeTarget "FastLaneDemo" */;
 			buildPhases = (
+				080592AD3CDAF80D87244997 /* [CP] Check Pods Manifest.lock */,
 				6DB806C3254C030800DCBC8B /* Sources */,
 				6DB806C4254C030800DCBC8B /* Frameworks */,
 				6DB806C5254C030800DCBC8B /* Resources */,
@@ -140,6 +165,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		080592AD3CDAF80D87244997 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FastLaneDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6DB806C3254C030800DCBC8B /* Sources */ = {
@@ -287,35 +337,41 @@
 		};
 		6DB806E1254C030900DCBC8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D3A200382EAE0BDA76A3EA /* Pods-FastLaneDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 500;
 				DEVELOPMENT_TEAM = 3F4YR8N9NF;
 				INFOPLIST_FILE = FastLaneDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.songzhou.FastLaneDemo;
+				MARKETING_VERSION = 2.1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jbsaas.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		6DB806E2254C030900DCBC8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68F483E0F1A9E09ADE2CAA77 /* Pods-FastLaneDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 500;
 				DEVELOPMENT_TEAM = 3F4YR8N9NF;
 				INFOPLIST_FILE = FastLaneDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.songzhou.FastLaneDemo;
+				MARKETING_VERSION = 2.1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jbsaas.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
