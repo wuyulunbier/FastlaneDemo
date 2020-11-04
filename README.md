@@ -1,6 +1,8 @@
 # FastlaneDemo
 
 [fastlane官网](https://docs.fastlane.tools/)
+[Jenkins](https://www.jenkins.io/)
+[shell教程](https://www.runoob.com/linux/linux-shell.html)
 
 fastlane的作用
 fastlane帮你统一定义、运行、自动化你的app发布流程，并且可以和其他第三方工具如CocoaPods等很好的结合，也可以和其他第三方持续集成(Continuous Integration)工具如Jenkins等完美的结合
