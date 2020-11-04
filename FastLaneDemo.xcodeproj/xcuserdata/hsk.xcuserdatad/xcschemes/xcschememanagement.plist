@@ -9,6 +9,19 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>FastLaneDemoTest.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6DB806C6254C030800DCBC8B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
