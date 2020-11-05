@@ -55,4 +55,9 @@ fastlane的作用
 ### docker与Kubernetes（k8s）
 
    - k8s 基于容器的集群管理平台
-   - docker 
+   - docker
+
+### 自动化实现的三种方式
+ - 1 单纯的使用shell脚本来实现
+ - 2 集成fastlane加配置文件来实现
+ - 3 Jenkins+git+fastlane结合的方式来实现，持续集成 
